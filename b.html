@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galeri X-TKJ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #fffde7);
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5em;
+      color: #00695c;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1300px;
+      margin: auto;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      position: relative;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto; /* Ini penting agar tinggi ikut gambar asli */
+      display: block;
+    }
+
+    .desc {
+      padding: 15px;
+      text-align: center;
+      font-size: 0.95em;
+      color: #444;
+      background-color: #fafafa;
+    }
+
+    .badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: #ffca28;
+      color: #333;
+      padding: 5px 10px;
+      font-size: 0.8em;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      text-align: center;
+      padding-top: 40px;
+      font-size: 0.9em;
+      color: #777;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Galeri Kegiatan X-TKJ 2025</h1>
+
+  <div class="gallery">
+    <div class="card">
+      <span class="badge">Hari 1</span>
+      <img src="foto1.jpg" alt="Foto 1">
+      <div class="desc">Pembukaan MPLS (Putra) - 14 Juli 2025</div>
+    </div>
+    <div class="card">
+      <span class="badge">Hari 1</span>
+      <img src="foto2.jpg" alt="Foto 2">
+      <div class="desc">Pembukaan MPLS (Putri) - 14 Juli 2025</div>
+    </div>
+    <div class="card">
+      <span class="badge">Hari 2</span>
+      <img src="foto3.jpg" alt="Foto 3">
+      <div class="desc">Senam dan Kegiatan Lapangan - 15 Juli 2025</div>
+    </div>
+    <div class="card">
+      <span class="badge">Hari 3</span>
+      <img src="foto4.jpg" alt="Foto 4">
+      <div class="desc">Materi Motivasi dan Kepemimpinan - 16 Juli 2025</div>
+    </div>
+    <div class="card">
+      <span class="badge">Hari 4</span>
+      <img src="foto5.jpg" alt="Foto 5">
+      <div class="desc">Pengenalan Ekstrakurikuler - 17 Juli 2025</div>
+    </div>
+    <div class="card">
+      <span class="badge">Hari 5</span>
+      <img src="foto6.jpg" alt="Foto 6">
+      <div class="desc">Penutupan & Foto Bersama - 18 Juli 2025</div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 X-TKJ | Semua foto milik dokumentasi kelas. Dibuat dengan ❤️ semangat kebersamaan.
+  </footer>
+
+</body>
+</html>
